@@ -1,0 +1,9 @@
+.data
+A: .space 100
+.text
+la $s6, A
+lui $s0, 0x2ab9
+ori $s0, $s0, 0x6f24
+addi $s1, $s0, -36
+sw $s0, 0($s6)
+lb $s2, 2($s6)
